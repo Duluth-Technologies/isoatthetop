@@ -1,6 +1,7 @@
 import { CurrencyPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 
 import {
@@ -109,6 +110,8 @@ export class SeasonPage implements OnInit {
   private readonly seasonPref = inject(SeasonPreferenceService);
   private readonly cdr = inject(ChangeDetectorRef);
   private readonly http = inject(HttpClient);
+  private readonly titleService = inject(Title);
+  private readonly metaService = inject(Meta);
   private readonly dayMonthFmt = new Intl.DateTimeFormat(this.localeId, { day: '2-digit', month: 'short' });
 
   protected readonly locale: Locale = localeFromAngularLocaleId(this.localeId);
@@ -151,6 +154,7 @@ export class SeasonPage implements OnInit {
       const season = data['season'] === 'summer' ? 'summer' : 'winter';
       this.season = season;
       this.seasonPref.setPreferredSeason(season);
+      this.updateSeoTags();
     });
   }
 
@@ -489,5 +493,175 @@ export class SeasonPage implements OnInit {
 
   protected heroImageSrc(): string {
     return this.season === 'winter' ? 'media/hiver/vue_hiver.jpg' : 'media/ete/vue_été.JPG';
+  }
+
+  private updateSeoTags(): void {
+    const baseUrl = 'https://www.isoatthetop.com';
+    
+    // Remove any existing JSON-LD scripts
+    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+    existingScripts.forEach(script => script.remove());
+    
+    // Titles and descriptions per season and locale
+    const seoData = {
+      winter: {
+        fr: {
+          title: 'Appartement Isola 2000 - Location Ski Pied des Pistes | Iso At The Top',
+          description: 'Appartement rénové 50 m² à Isola 2000 : 2 chambres, 2 salles d\'eau, vue panoramique sud. À ~250 m des pistes. Location ski hiver dans les Alpes-Maritimes.',
+          ogImage: 'media/hiver/vue_hiver.jpg',
+        },
+        en: {
+          title: 'Isola 2000 Apartment - Ski-in Ski-out Rental | Iso At The Top',
+          description: 'Renovated 50 m² apartment in Isola 2000: 2 bedrooms, 2 bathrooms, south-facing with panoramic views. ~250 m from slopes. Winter ski rental in French Alps.',
+          ogImage: 'media/hiver/vue_hiver.jpg',
+        },
+      },
+      summer: {
+        fr: {
+          title: 'Appartement Isola 2000 Été - Location Montagne | Iso At The Top',
+          description: 'Location été à Isola 2000 : appartement rénové 50 m², 2 chambres, vue panoramique. Randonnées, VTT, activités montagne dans les Alpes du Sud.',
+          ogImage: 'media/ete/vue_été.JPG',
+        },
+        en: {
+          title: 'Isola 2000 Summer Apartment - Mountain Rental | Iso At The Top',
+          description: 'Summer rental in Isola 2000: renovated 50 m² apartment, 2 bedrooms, panoramic views. Hiking, MTB, mountain activities in the French Southern Alps.',
+          ogImage: 'media/ete/vue_été.JPG',
+        },
+      },
+    };
+
+    const currentSeo = seoData[this.season][this.locale];
+    const currentUrl = `${baseUrl}/${this.locale}/${this.season === 'winter' ? (this.locale === 'fr' ? 'hiver' : 'winter') : (this.locale === 'fr' ? 'ete' : 'summer')}/`;
+    const altLocale = this.locale === 'fr' ? 'en' : 'fr';
+    const altUrl = `${baseUrl}/${altLocale}/${this.season === 'winter' ? (altLocale === 'fr' ? 'hiver' : 'winter') : (altLocale === 'fr' ? 'ete' : 'summer')}/`;
+    const defaultUrl = `${baseUrl}/en/${this.season === 'winter' ? 'winter' : 'summer'}/`;
+
+    // Update title
+    this.titleService.setTitle(currentSeo.title);
+
+    // Update meta description
+    this.metaService.updateTag({ name: 'description', content: currentSeo.description });
+
+    // Canonical URL
+    this.metaService.updateTag({ rel: 'canonical', href: currentUrl });
+
+    // Open Graph tags
+    this.metaService.updateTag({ property: 'og:type', content: 'website' });
+    this.metaService.updateTag({ property: 'og:title', content: currentSeo.title });
+    this.metaService.updateTag({ property: 'og:description', content: currentSeo.description });
+    this.metaService.updateTag({ property: 'og:image', content: `${baseUrl}/${currentSeo.ogImage}` });
+    this.metaService.updateTag({ property: 'og:url', content: currentUrl });
+    this.metaService.updateTag({ property: 'og:locale', content: this.locale === 'fr' ? 'fr_FR' : 'en_US' });
+    this.metaService.updateTag({ property: 'og:site_name', content: 'Iso At The Top' });
+
+    // Twitter Card tags
+    this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.metaService.updateTag({ name: 'twitter:title', content: currentSeo.title });
+    this.metaService.updateTag({ name: 'twitter:description', content: currentSeo.description });
+    this.metaService.updateTag({ name: 'twitter:image', content: `${baseUrl}/${currentSeo.ogImage}` });
+
+    // Hreflang tags
+    // Remove existing hreflang tags first
+    const existingHreflangTags = this.metaService.getTags('rel="alternate"');
+    existingHreflangTags.forEach((tag: HTMLMetaElement) => this.metaService.removeTagElement(tag));
+
+    // Add new hreflang tags
+    this.metaService.addTag({ rel: 'alternate', hreflang: this.locale, href: currentUrl });
+    this.metaService.addTag({ rel: 'alternate', hreflang: altLocale, href: altUrl });
+    this.metaService.addTag({ rel: 'alternate', hreflang: 'x-default', href: defaultUrl });
+
+    // Add Schema.org JSON-LD structured data
+    this.addStructuredData(currentUrl, currentSeo);
+  }
+
+  private addStructuredData(url: string, seoData: { title: string; description: string; ogImage: string }): void {
+    const baseUrl = 'https://www.isoatthetop.com';
+    
+    // Build reviews array
+    const reviewsArray = this.reviews.reviews?.slice(0, 3).map((review) => ({
+      '@type': 'Review',
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': '5',
+        'bestRating': '5'
+      },
+      'author': {
+        '@type': 'Person',
+        'name': 'Airbnb Guest'
+      },
+      'reviewBody': this.reviewExcerpt(review),
+      'datePublished': review.date || new Date().toISOString().split('T')[0]
+    })) || [];
+
+    // Create VacationRental schema
+    const vacationRentalSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'VacationRental',
+      'name': this.contact.brandName || 'Iso At The Top',
+      'description': seoData.description,
+      'url': url,
+      'image': `${baseUrl}/${seoData.ogImage}`,
+      'address': {
+        '@type': 'PostalAddress',
+        'addressLocality': 'Isola 2000',
+        'addressRegion': 'Alpes-Maritimes',
+        'addressCountry': 'FR',
+        'postalCode': '06420'
+      },
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': '44.1844',
+        'longitude': '7.1575'
+      },
+      'numberOfRooms': 3,
+      'numberOfBedrooms': 2,
+      'numberOfBathroomsTotal': 2,
+      'floorSize': {
+        '@type': 'QuantitativeValue',
+        'value': '50',
+        'unitCode': 'MTK'
+      },
+      'petsAllowed': false,
+      'amenityFeature': [
+        { '@type': 'LocationFeatureSpecification', 'name': this.locale === 'fr' ? 'Cuisine équipée' : 'Equipped kitchen', 'value': true },
+        { '@type': 'LocationFeatureSpecification', 'name': this.locale === 'fr' ? 'Balcon sud' : 'South-facing balcony', 'value': true },
+        { '@type': 'LocationFeatureSpecification', 'name': this.locale === 'fr' ? 'Vue panoramique' : 'Panoramic views', 'value': true },
+        { '@type': 'LocationFeatureSpecification', 'name': 'WiFi', 'value': true }
+      ],
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '5.0',
+        'bestRating': '5',
+        'worstRating': '1',
+        'ratingCount': this.reviews.reviews?.length || 3
+      },
+      'review': reviewsArray
+    };
+
+    // Create Organization schema for brand
+    const organizationSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      'name': this.contact.brandName || 'Iso At The Top',
+      'url': baseUrl,
+      'logo': `${baseUrl}/media/logo.png`,
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'contactType': 'customer service',
+        'email': this.contact.email || 'contact@isoatthetop.com',
+        'availableLanguage': ['fr', 'en']
+      }
+    };
+
+    // Inject both schemas
+    this.injectJsonLd(vacationRentalSchema);
+    this.injectJsonLd(organizationSchema);
+  }
+
+  private injectJsonLd(schema: any): void {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
   }
 }

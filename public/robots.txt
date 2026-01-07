@@ -1,0 +1,15 @@
+# robots.txt for Iso At The Top
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.isoatthetop.com/sitemap.xml
+
+# Block access to data files
+Disallow: /data/
+Disallow: /assets/
+
+# Allow specific pages
+Allow: /fr/
+Allow: /en/
+Allow: /media/
