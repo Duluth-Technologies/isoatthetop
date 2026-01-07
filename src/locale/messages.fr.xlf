@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <note priority="1" from="codex">Rappel: respecter l’i18n et les clés existantes.</note>
+    <body>
+      <trans-unit id="navSkipToContent" datatype="html">
+        <source>Skip to content</source><target>Aller au contenu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">1,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="brandTitle" datatype="html">
+        <source>Iso At The Top</source><target>Iso At The Top</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalTitle" datatype="html">
+        <source>Legal notice</source><target>Mentions légales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seasonWinter" datatype="html">
+        <source>Winter</source><target>Hiver</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seasonSummer" datatype="html">
+        <source>Summer</source><target>Été</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalTitleH1" datatype="html">
+        <source>Legal notice</source><target>Mentions légales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalPublisherTitle" datatype="html">
+        <source>Publisher</source><target>Éditeur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalPublisherHint" datatype="html">
+        <source> To be completed with the owner’s information. </source><target>À compléter avec les informations du propriétaire.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalPublisherName" datatype="html">
+        <source>Name / company: …</source><target>Nom / raison sociale : …</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalPublisherEmail" datatype="html">
+        <source>Email:</source><target>Email :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalPublisherPhone" datatype="html">
+        <source>Phone:</source><target>Téléphone :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalHostingTitle" datatype="html">
+        <source>Hosting</source><target>Hébergement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalHostingValue" datatype="html">
+        <source> GitHub Pages — GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA </source><target>GitHub Pages — GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalDataTitle" datatype="html">
+        <source>Data &amp; cookies</source><target>Données &amp; cookies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalNoCookies" datatype="html">
+        <source>This site does not use cookies.</source><target>Ce site n’utilise pas de cookies.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">57,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalDataUse" datatype="html">
+        <source> If you use the contact form, the information entered is used only to reply to your stay request. </source><target>Si vous utilisez le formulaire de contact, les informations saisies sont utilisées uniquement pour répondre à votre demande de séjour.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="brandTitleFooter" datatype="html">
+        <source>Iso At The Top</source><target>Iso At The Top</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">573,574</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legalBack" datatype="html">
+        <source>Back</source><target>Retour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/mentions-legales.page.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="showEmailButton" datatype="html">
+        <source>Show</source><target>Afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">459,460</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="copyButton" datatype="html">
+        <source>Copy</source><target>Copier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">457,458</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="showPhoneButton" datatype="html">
+        <source>Show</source><target>Afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">473,474</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundTitle" datatype="html">
+        <source>404</source><target>404</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found.page.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundText" datatype="html">
+        <source>Page not found.</source><target>Page introuvable.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found.page.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundHome" datatype="html">
+        <source>Back to home</source><target>Retour à l’accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found.page.ts</context>
+          <context context-type="linenumber">12,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="brandSub" datatype="html">
+        <source>Isola 2000</source><target>Isola 2000</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navAriaLabel" datatype="html">
+        <source>Navigation</source><target>Navigation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navStation" datatype="html">
+        <source> The resort </source><target>La station</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navApartment" datatype="html">
+        <source> Apartment </source><target>Appartement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navBooking" datatype="html">
+        <source> Book </source><target>Réserver</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navPricing" datatype="html">
+        <source> Prices &amp; availability </source><target>Tarifs &amp; dispos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navAccess" datatype="html">
+        <source> Access </source><target>Accès</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navContact" datatype="html">
+        <source> Contact </source><target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navSeasonAriaLabel" datatype="html">
+        <source>Season</source><target>Saison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navLanguageAriaLabel" datatype="html">
+        <source>Language</source><target>Langue</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroKickerWinter" datatype="html">
+        <source>Winter · Weekly rental (Saturday → Saturday)</source><target>Hiver · Location semaine (samedi → samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroTitleWinter" datatype="html">
+        <source>South-facing sunshine. Panoramic views. Close to the slopes.</source><target>Soleil plein sud. Vue panoramique. À deux pas des pistes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroLeadWinter" datatype="html">
+        <source> Renovated 50 m² apartment in Isola 2000: 2 separate bedrooms, 1 bathroom with WC and 1 shower room with WC, bright living room and mountain views. Slopes ~250 m, shops 7–8 min walk (shuttle). </source><target>Appartement 50 m² refait à neuf à Isola 2000 : 2 chambres fermées, une salle de bain avec WC et une salle d’eau avec WC, séjour lumineux et vue montagne. Pistes à ~250 m, commerces à 7–8 min à pied (navette).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">77,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroKickerSummer" datatype="html">
+        <source>Summer · Weekly rental (Saturday → Saturday)</source><target>Été · Location semaine (samedi → samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroTitleSummer" datatype="html">
+        <source>Blue skies. Mountains. A bright, comfortable apartment.</source><target>Grand bleu. Montagnes. Un appartement lumineux, tout confort.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroLeadSummer" datatype="html">
+        <source> Summer in Isola 2000: hiking, MTB, panoramas. Renovated 50 m² south-facing apartment: 2 separate bedrooms, 1 bathroom with WC and 1 shower room with WC, bright living room and mountain views. </source><target>Isola 2000 l’été : rando, VTT, panoramas. Appartement 50 m² plein sud, refait à neuf : 2 chambres fermées, une salle de bain avec WC et une salle d’eau avec WC, séjour lumineux et vue montagne.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">85,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stationTitle" datatype="html">
+        <source>The resort</source><target>La station</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroCtaPrimary" datatype="html">
+        <source> Request a stay </source><target>Demander un séjour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroCtaEmail" datatype="html">
+        <source>Email</source><target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroCtaPhone" datatype="html">
+        <source>Phone</source><target>Téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">100,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroImageAltWinter" datatype="html">
+        <source>Panoramic view of snowy mountains under a blue sky</source><target>Vue panoramique sur les montagnes enneigées sous un ciel bleu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroImageAltSummer" datatype="html">
+        <source>Panoramic view of summer mountains under an azure sky</source><target>Vue panoramique sur les montagnes en été sous un ciel azur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idealTitle" datatype="html">
+        <source>Perfect for…</source><target>Idéal pour…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idealTextWinter" datatype="html">
+        <source>Families (2 bedrooms) · Couples · Friends. Modern comfort, light, views.</source><target>Familles (2 chambres) · Couples · Amis. Confort moderne, lumière, vue.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">140,142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idealTextSummer" datatype="html">
+        <source>Families · Couples · Friends. Nature, fresh air and panoramic views.</source><target>Familles · Couples · Amis. Nature, air frais et vue panoramique.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">142,144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idealKnowTitle" datatype="html">
+        <source>Good to know</source><target>À savoir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">146,148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idealKnowText" datatype="html">
+        <source>Saturday → Saturday rentals.</source><target>Location du samedi au samedi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">148,150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlightsKicker" datatype="html">
+        <source>Why you’ll love it</source><target>Ce qui fait la différence</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">157,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlightsTitle" datatype="html">
+        <source>Highlights</source><target>Les points forts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">158,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights1Title" datatype="html">
+        <source>South-facing</source><target>Plein sud</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">161,162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights1TextWinter" datatype="html">
+        <source>Lots of sunshine, bright living room.</source><target>Ensoleillement fort, séjour lumineux.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">163,165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights1TextSummer" datatype="html">
+        <source>Light and sunshine.</source><target>Terrasse/balcon et lumière.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">165,168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights2Title" datatype="html">
+        <source>Panoramic view</source><target>Vue panoramique</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">169,170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights2TextWinter" datatype="html">
+        <source>Mountains as far as the eye can see.</source><target>Montagnes à perte de vue.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">171,173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights2TextSummer" datatype="html">
+        <source>Mountains and blue skies.</source><target>Montagnes &amp; ciel azur.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">173,176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights3Title" datatype="html">
+        <source>2 separate bedrooms</source><target>2 chambres fermées</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">177,178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights3TextWinter" datatype="html">
+        <source>No “bunk corner”.</source><target>Pas de “coin montagne”.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights3TextSummer" datatype="html">
+        <source>Comfort for 4–5 guests.</source><target>Confort pour 4–5.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">181,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights4Title" datatype="html">
+        <source>1 bathroom with WC + 1 shower room with WC</source><target>Une salle de bain avec WC et une salle d’eau avec WC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">185,186</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights4TextWinter" datatype="html">
+        <source>Rare and practical at the resort.</source><target>Confort rare et pratique.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">187,189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights4TextSummer" datatype="html">
+        <source>Super practical for families.</source><target>Pratique en famille.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">189,192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights5TitleWinter" datatype="html">
+        <source>~250 m to slopes</source><target>~250 m des pistes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">194,195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights5TextWinter" datatype="html">
+        <source>Quick access for ski days.</source><target>Accès rapide ski &amp; retours.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">195,197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights5TitleSummer" datatype="html">
+        <source>Modern comfort</source><target>Confort moderne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">197,198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights5TextSummer" datatype="html">
+        <source>Full kitchen and laundry.</source><target>Électroménager complet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">198,201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights6Title" datatype="html">
+        <source>Shops &amp; shuttle</source><target>Commerces &amp; navette</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">202,203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="highlights6Text" datatype="html">
+        <source>7–8 min walk + shuttle.</source><target>7–8 min à pied + navette.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">203,205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentKicker" datatype="html">
+        <source>50 m² · 2nd floor · south-facing</source><target>50 m² · 2e étage · plein sud</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">211,212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentTitle" datatype="html">
+        <source>The apartment</source><target>L’appartement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">212,213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bookingTitle" datatype="html">
+        <source>Book your stay</source><target>Réserver votre séjour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">430,431</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentLayoutTitle" datatype="html">
+        <source>Layout</source><target>Configuration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">215,217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentLayout1" datatype="html">
+        <source> 2 separate bedrooms: double bed 140×190; bunk bed 190×80 + pull-out. </source><target>2 chambres indépendantes et fermées : lit 140×190 ; lit superposé 190×80 + tiroir.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">218,219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentLayout2" datatype="html">
+        <source>1 bathroom with WC + 1 shower room with WC.</source><target>Une salle de bain avec WC + une salle d’eau avec WC.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">220,221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentLayout3" datatype="html">
+        <source>Bright living room with panoramic mountain views.</source><target>Séjour lumineux, vue montagne panoramique.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">221,223</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenitiesTitle" datatype="html">
+        <source>Amenities</source><target>Équipements</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">225,227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity1" datatype="html">
+        <source>Dishwasher, oven, induction hob</source><target>Lave-vaisselle, four, plaques induction</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">227,228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity2" datatype="html">
+        <source>Washing machine, tumble dryer</source><target>Lave-linge, sèche-linge</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">228,229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity3" datatype="html">
+        <source>TV, Nespresso</source><target>TV, Nespresso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">229,230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity4" datatype="html">
+        <source>Bed linen &amp; towels provided</source><target>Draps &amp; serviettes fournis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">230,231</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity5" datatype="html">
+        <source>Large wardrobes, ski locker</source><target>Dressings spacieux, local à skis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">231,232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentAmenity6" datatype="html">
+        <source>Easy street parking</source><target>Parking rue facile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">232,234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentPlanTitle" datatype="html">
+        <source>2D floor plan</source><target>Plan 2D</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">237,239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="apartmentPlanAlt" datatype="html">
+        <source>2D apartment floor plan</source><target>Plan 2D de l'appartement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">240,241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryKicker" datatype="html">
+        <source>Photos &amp; short videos</source><target>Photos &amp; vidéos courtes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">253,254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryTitle" datatype="html">
+        <source>Gallery</source><target>Galerie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">254,256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryFilterAria" datatype="html">
+        <source>Filter gallery</source><target>Filtrer la galerie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryFilterWinter" datatype="html">
+        <source> Winter </source><target>Hiver</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">263,265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryFilterSummer" datatype="html">
+        <source> Summer </source><target>Été</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">271,273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="galleryHint" datatype="html">
+        <source> To edit the gallery: add files in `media/` then update `data/media.json`. </source><target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">277,280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKicker" datatype="html">
+        <source>Resort &amp; access</source><target>Station &amp; accès</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">284,285</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTitleWinter" datatype="html">
+        <source>Isola 2000 · Sun &amp; altitude</source><target>Isola 2000 · Soleil &amp; altitude</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">286,288</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTitleSummer" datatype="html">
+        <source>Isola 2000 · Fresh air &amp; views</source><target>Isola 2000 · Fraîcheur &amp; panoramas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">288,290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesTitle" datatype="html">
+        <source>Key distances</source><target>Distances clés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">292,294</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesWinter1" datatype="html">
+        <source>Slopes: ~250 m</source><target>Pistes : ~250 m</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">295,296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesWinter2" datatype="html">
+        <source>Shops: 7–8 min walk</source><target>Commerces : 7–8 min à pied</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">296,297</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesWinter3" datatype="html">
+        <source>Internal shuttle with stop in front of the building, daily 7:45 am – 6:30 pm. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>More info<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source><target>Navette interne avec arrêt devant l'immeuble tous les jours de 7h45 à 18h30. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Plus d'infos<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">297,299</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesSummer1" datatype="html">
+        <source>Shops: 7–8 min walk</source><target>Commerces : 7–8 min à pied</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">299,300</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesSummer2" datatype="html">
+        <source>Internal shuttle with stop in front of the building, daily 7:45 am – 6:30 pm. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>More info<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source><target>Navette interne avec arrêt devant l'immeuble tous les jours de 7h45 à 18h30. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Plus d'infos<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">300,301</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDistancesSummer3" datatype="html">
+        <source>Hiking/MTB starts nearby</source><target>Départs rando/VTT : proches</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">301,304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTimesTitle" datatype="html">
+        <source>Indicative travel times</source><target>Temps d’accès indicatifs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">309,310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTimes1" datatype="html">
+        <source>From Nice: 1h30</source><target>Depuis Nice : 1h30</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">156,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTimes2" datatype="html">
+        <source>From Marseille: 3h30</source><target>Depuis Marseille : 3h30</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">157,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessTimes3" datatype="html">
+        <source>From Montpellier: 5h00</source><target>Depuis Montpellier : 5h00</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">158,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessMapTitle" datatype="html">
+        <source>Map</source><target>Carte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">322,323</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessMapAlt" datatype="html">
+        <source>Map of South-East France locating Isola 2000</source><target>Carte du Sud-Est de la France situant Isola 2000</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">324,325</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKnowTitle" datatype="html">
+        <source>Good to know</source><target>À savoir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">331,332</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKnow1" datatype="html">
+        <source>France’s 5th highest resort</source><target>5ème station la plus haute de France</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">333,334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKnow2" datatype="html">
+        <source>300 sunny days per year</source><target>300 jours de soleil par an</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">148,149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKnow4" datatype="html">
+        <source>120 km of slopes</source><target>120 km de pistes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">149,150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessKnow3" datatype="html">
+        <source>Good-value lift passes: €44 adult day pass</source><target>Forfaits abordables : 44 € le forfait journée adulte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessLinksLabel" datatype="html">
+        <source>Useful links:</source><target>Liens utiles :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">339,340</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessLinkOffice" datatype="html">
+        <source>Tourist office</source><target>Office du tourisme</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">340,342</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessLinkWeather" datatype="html">
+        <source>Weather</source><target>Météo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">343,346</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activitiesKickerWinter" datatype="html">
+        <source>Things to do in winter</source><target>À faire en hiver</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">352,354</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activitiesKickerSummer" datatype="html">
+        <source>Things to do in summer</source><target>À faire en été</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">354,356</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activitiesTitle" datatype="html">
+        <source>Activities</source><target>Activités</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">356,357</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities1TitleWinter" datatype="html">
+        <source>Ski &amp; snowboard</source><target>Ski &amp; snowboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">360,361</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities1TextWinter" datatype="html">
+        <source>Resort area, lessons, rentals.</source><target>Domaine, cours, locations.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">361,363</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities2TitleWinter" datatype="html">
+        <source>Walks &amp; viewpoints</source><target>Balades &amp; points de vue</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">364,365</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities2TextWinter" datatype="html">
+        <source>Scenic routes and sunsets.</source><target>Itinéraires et couchers de soleil.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">365,367</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities3TitleWinter" datatype="html">
+        <source>Family-friendly</source><target>Famille</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">368,369</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities3TextWinter" datatype="html">
+        <source>Simple, practical activities.</source><target>Activités simples, pratiques.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">369,371</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities1TitleSummer" datatype="html">
+        <source>Hiking</source><target>Randonnée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">373,374</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities1TextSummer" datatype="html">
+        <source>Scenic trails and cool air.</source><target>Itinéraires panoramiques et fraîcheur.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">374,376</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities2TitleSummer" datatype="html">
+        <source>Mountain biking</source><target>VTT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">377,378</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities2TextSummer" datatype="html">
+        <source>Routes and adrenaline in the Alps.</source><target>Sorties et sensations en montagne.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">378,380</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities3TitleSummer" datatype="html">
+        <source>Family-friendly</source><target>Famille</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">381,382</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="activities3TextSummer" datatype="html">
+        <source>Nature activities and gentle walks.</source><target>Activités nature, balades, découvertes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">382,385</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingKicker" datatype="html">
+        <source>Prices &amp; availability</source><target>Tarifs &amp; disponibilités</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">391,392</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingTitle" datatype="html">
+        <source>All weeks (Saturday → Saturday)</source><target>Toutes les semaines (samedi → samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">392,393</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingWeek" datatype="html">
+        <source>Week</source><target>Semaine</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">397,398</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingPrice" datatype="html">
+        <source>Price</source><target>Prix</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">398,399</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingStatus" datatype="html">
+        <source>Status</source><target>Statut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">399,400</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricingHolidays" datatype="html">
+        <source>School holidays</source><target>Vacances scolaires</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">400,402</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedKicker" datatype="html">
+        <source>Terms</source><target>Conditions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">414,415</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedTitle" datatype="html">
+        <source>Included &amp; conditions</source><target>Inclus &amp; conditions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">415,416</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedIncludedTitle" datatype="html">
+        <source>Included</source><target>Inclus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">418,420</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="included1" datatype="html">
+        <source>Bed linen &amp; towels</source><target>Draps &amp; serviettes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">420,421</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="included2" datatype="html">
+        <source>Kitchen equipment (Nespresso, induction, oven)</source><target>Équipements cuisine (Nespresso, induction, four)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">421,422</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="included3Winter" datatype="html">
+        <source>Ski locker</source><target>Local à skis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">423,425</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="included3Summer" datatype="html">
+        <source>Easy street parking</source><target>Parking rue facile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">425,427</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirmTitle" datatype="html">
+        <source>Stay conditions</source><target>Conditions de séjour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">430,432</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirm1" datatype="html">
+        <source>End-of-stay cleaning included</source><target>Ménage de fin de séjour inclus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">432,433</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirm2" datatype="html">
+        <source>Deposit: €1,000</source><target>Caution : 1000 €</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">433,434</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirm3" datatype="html">
+        <source>Check-in from 4:00 pm · check-out 10:00 am</source><target>Arrivée à partir de 16h · départ à 10h00</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">434,435</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirm5" datatype="html">
+        <source>Free cancellation up to 30 days before check-in</source><target>Annulation gratuite jusqu'à 30 jours avant le début du séjour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">390,391</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="includedToConfirm4" datatype="html">
+        <source>No pets</source><target>Pas d'animaux</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">391,392</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewsKicker" datatype="html">
+        <source>Guest feedback</source><target>Retours voyageurs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">444,445</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewsTitle" datatype="html">
+        <source>Reviews</source><target>Avis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">399,400</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewsRating" datatype="html">
+        <source>Rated ★ 5.0 on Airbnb</source><target>Noté ★ 5.0 sur Airbnb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">400,401</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="airbnbLinkAria" datatype="html">
+        <source>View this listing on Airbnb</source><target>Voir l’annonce sur Airbnb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">447,455</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="airbnbLogoAlt" datatype="html">
+        <source>Airbnb</source><target>Airbnb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">455,462</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="airbnbLinkText" datatype="html">
+        <source>View this listing on Airbnb</source><target>Voir l’annonce sur Airbnb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">462,470</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewsRating" datatype="html">
+        <source>5-star rating on Airbnb</source><target>5 étoiles sur Airbnb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">446,447</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactKicker" datatype="html">
+        <source>Direct contact</source><target>Contact direct</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">456,457</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactTitle" datatype="html">
+        <source>Request a stay</source><target>Demander un séjour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">457,458</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactDetailsTitle" datatype="html">
+        <source>Contact details</source><target>Coordonnées</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">460,462</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactLabelEmail" datatype="html">
+        <source>Email:</source><target>Email :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">462,463</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactLabelPhone" datatype="html">
+        <source>Phone:</source><target>Téléphone :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">468,469</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactQuickTitle" datatype="html">
+        <source>To get a quick reply</source><target>Pour une réponse rapide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">479,481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactQuick1Prefix" datatype="html">
+        <source>Check</source><target>Regardez</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">483,484</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navPricingInline" datatype="html">
+        <source> Pricing &amp; availability </source><target>Tarifs &amp; dispos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">485,486</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactQuick1Suffix" datatype="html">
+        <source>, then share your dates (Saturday → Saturday).</source><target>, puis indiquez vos dates (samedi → samedi).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">487,489</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactQuick2" datatype="html">
+        <source>Tell us your party size (up to 5) and any needs (kids, bedding, etc.).</source><target>Précisez le nombre de personnes (jusqu’à 5) et vos besoins (enfants, lit, etc.).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">489,490</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactQuick3" datatype="html">
+        <source>Add your preferred contact method and, if useful, a callback window.</source><target>Indiquez votre préférence de contact et, si besoin, un créneau pour rappel.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">490,492</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactConfirmTitle" datatype="html">
+        <source>What we’ll confirm</source><target>Ce que nous confirmons</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">494,496</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactConfirm1" datatype="html">
+        <source>Week availability</source><target>Disponibilité de la semaine</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">497,498</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactConfirm2" datatype="html">
+        <source>Price and details (arrival/departure, cleaning, deposit)</source><target>Prix et modalités (arrivée/départ, ménage, caution)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">498,499</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactConfirm3" datatype="html">
+        <source>Answers to your questions</source><target>Réponses à vos questions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">499,501</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactNotice" datatype="html">
+        <source> This site does not use cookies. Data is used only to reply to your request. </source><target>Ce site n’utilise pas de cookies. Les informations saisies sont utilisées uniquement pour répondre à votre demande.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">502,504</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormTitle" datatype="html">
+        <source>Form</source><target>Formulaire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">506,507</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormName" datatype="html">
+        <source>Name</source><target>Nom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">509,510</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormEmail" datatype="html">
+        <source>Email</source><target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">513,514</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormPhone" datatype="html">
+        <source>Phone</source><target>Téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">517,518</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormGuests" datatype="html">
+        <source>Guests</source><target>Nombre de personnes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">521,522</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormArrival" datatype="html">
+        <source>Arrival (Saturday)</source><target>Arrivée (samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">525,526</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormDeparture" datatype="html">
+        <source>Departure (Saturday)</source><target>Départ (samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">529,530</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormPrefContact" datatype="html">
+        <source>Preferred contact</source><target>Préférence de contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">533,534</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormChoose" datatype="html">
+        <source>Choose…</source><target>Choisir…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">535,536</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormOptEmail" datatype="html">
+        <source>Email</source><target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">536,537</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormOptPhone" datatype="html">
+        <source>Phone</source><target>Téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">537,538</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormCallback" datatype="html">
+        <source>Callback window (optional)</source><target>Créneau pour rappel (optionnel)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">542,544</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormCallbackPlaceholder" datatype="html">
+        <source>e.g. 12–2pm or 6–8pm</source><target>Ex : 12h–14h ou 18h–20h</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">545,546</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormMessage" datatype="html">
+        <source>Message</source><target>Message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">550,552</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormMessagePlaceholder" datatype="html">
+        <source>Dates, group, questions…</source><target>Infos utiles : composition, besoins, questions…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">553,554</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormSend" datatype="html">
+        <source>Send</source><target>Envoyer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">558,559</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormFineprint" datatype="html">
+        <source> No cookies. Data is used only to reply to your request. </source><target>Sans cookies. Les informations sont utilisées uniquement pour répondre à votre demande.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">560,561</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerTagline" datatype="html">
+        <source> Apartment rental in Isola 2000 · south-facing · panoramic views. </source><target>Location appartement à Isola 2000 · plein sud · vue panoramique.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">575,577</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerLegalLink" datatype="html">
+        <source>Legal notice</source><target>Mentions légales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">579,582</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerCookiesNotice" datatype="html">
+        <source>This site does not use cookies. Data is used only to reply to your request.</source><target>Ce site n'utilise pas de cookies. Les données sont utilisées uniquement pour répondre à votre demande.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">596,598</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lightboxAriaLabel" datatype="html">
+        <source>Enlarged photo</source><target>Agrandissement de la photo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lightboxClose" datatype="html">
+        <source>Close</source><target>Fermer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewsSource" datatype="html">
+        <source>Source:</source><target>Source :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slopeMapTitle" datatype="html">
+        <source>Slopes map</source><target>Plan des pistes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">224</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slopeMapAlt" datatype="html">
+        <source>Isola 2000 ski slopes map</source><target>Plan des pistes Isola 2000</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slopeMapSource" datatype="html">
+        <source>Source:</source><target>Source :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slopeMapLink" datatype="html">
+        <source>Isola 2000 official website</source><target>Site officiel Isola 2000</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="zoomInLabel" datatype="html">
+        <source>Zoom in</source><target>Zoomer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="zoomOutLabel" datatype="html">
+        <source>Zoom out</source><target>Dézoomer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">337</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="zoomResetLabel" datatype="html">
+        <source>Reset zoom</source><target>Réinitialiser le zoom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formSuccessTitle" datatype="html">
+        <source>Message sent!</source><target>Message envoyé !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">574</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formSuccessMessage" datatype="html">
+        <source>We'll get back to you as soon as possible.</source><target>Nous vous répondrons dans les plus brefs délais.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">575</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formErrorTitle" datatype="html">
+        <source>Error</source><target>Erreur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">579</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formErrorMessage" datatype="html">
+        <source>An error occurred. Please try again or contact us directly.</source><target>Une erreur est survenue. Veuillez réessayer ou nous contacter directement.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">580</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormSending" datatype="html">
+        <source>Sending…</source><target>Envoi en cours…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormSent" datatype="html">
+        <source>Sent!</source><target>Envoyé !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">625</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormWeek" datatype="html">
+        <source>Week (Saturday → Saturday)</source><target>Semaine (samedi → samedi)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">599</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormChooseWeek" datatype="html">
+        <source>Choose a week…</source><target>Choisir une semaine…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">601</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormWeekBooked" datatype="html">
+        <source> (Booked)</source><target> (Réservé)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">607</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactFormWeekOption" datatype="html">
+        <source> (Option)</source><target> (Option)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">609</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerPublisher" datatype="html">
+        <source>Publisher:</source><target>Éditeur :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">676</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerAddress" datatype="html">
+        <source>5 avenue du Mont Rabeau, 06200 Nice</source><target>5 avenue du Mont Rabeau, 06200 Nice</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">677</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerContact" datatype="html">
+        <source>Contact:</source><target>Contact :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">681</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerHosting" datatype="html">
+        <source>Hosting: GitHub Pages</source><target>Hébergement : GitHub Pages</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+          <context context-type="linenumber">682</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

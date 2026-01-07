@@ -1,0 +1,691 @@
+<a class="skip-link" [attr.href]="'#' + sectionId('main')" i18n="@@navSkipToContent">Skip to content</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" [routerLink]="seasonPath(season)">
+      <img class="brand-logo" src="media/logo.png" alt="Iso At The Top - Isola 2000" i18n-alt="@@brandLogoAlt" />
+    </a>
+
+    <nav class="nav" aria-label="Navigation" i18n-aria-label="@@navAriaLabel">
+      <a [routerLink]="seasonPath(season)" [fragment]="sectionId('station')" i18n="@@navStation">
+        The resort
+      </a>
+      <a [routerLink]="seasonPath(season)" [fragment]="sectionId('apartment')" i18n="@@navApartment">
+        Apartment
+      </a>
+      <a [routerLink]="seasonPath(season)" [fragment]="sectionId('booking')" i18n="@@navBooking">
+        Book
+      </a>
+    </nav>
+
+    <div class="controls">
+      <div
+        class="pill"
+        aria-label="Season"
+        i18n-aria-label="@@navSeasonAriaLabel"
+        data-season-pill
+        [attr.data-current-season]="season"
+      >
+        <a
+          data-season="winter"
+          [routerLink]="seasonPath('winter')"
+          [attr.aria-current]="season === 'winter' ? 'page' : null"
+          i18n="@@seasonWinter"
+        >
+          Winter
+        </a>
+        <a
+          data-season="summer"
+          [routerLink]="seasonPath('summer')"
+          [attr.aria-current]="season === 'summer' ? 'page' : null"
+          i18n="@@seasonSummer"
+        >
+          Summer
+        </a>
+      </div>
+
+      <div class="pill" aria-label="Language" i18n-aria-label="@@navLanguageAriaLabel">
+        <a
+          [attr.href]="otherLocaleHref('fr')"
+          [attr.aria-current]="locale === 'fr' ? 'page' : null"
+        >
+          FR
+        </a>
+        <a
+          [attr.href]="otherLocaleHref('en')"
+          [attr.aria-current]="locale === 'en' ? 'page' : null"
+        >
+          EN
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main [id]="sectionId('main')">
+  <section [id]="sectionId('station')">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-media">
+        @if (season === 'winter') {
+          <video
+            src="media/hiver/isola-web.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            aria-label="Panoramic view of snowy mountains under a blue sky"
+            i18n-aria-label="@@heroImageAltWinter"
+          ></video>
+        } @else {
+          <img
+            [src]="heroImageSrc()"
+            alt="Panoramic view of summer mountains under an azure sky"
+            i18n-alt="@@heroImageAltSummer"
+            decoding="async"
+          />
+        }
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          @if (season === 'winter') {
+            <h1 i18n="@@heroTitleWinter">South-facing sunshine. Panoramic views. Close to the slopes.</h1>
+            <p i18n="@@heroLeadWinter">
+              Renovated 50 m² apartment in Isola 2000: 2 separate bedrooms, 1 bathroom with WC and 1
+              shower room with WC, bright living room and mountain views. Slopes ~250 m, shops 7–8 min
+              walk (shuttle).
+            </p>
+          } @else {
+            <h1 i18n="@@heroTitleSummer">Blue skies. Mountains. A bright, comfortable apartment.</h1>
+            <p i18n="@@heroLeadSummer">
+              Summer in Isola 2000: hiking, MTB, panoramas. Renovated 50 m² south-facing apartment: 2
+              separate bedrooms, 1 bathroom with WC and 1 shower room with WC, bright living room and
+              mountain views.
+            </p>
+          }
+          <div class="hero-cta">
+            <a
+              class="btn btn-primary"
+              [routerLink]="seasonPath(season)"
+              [fragment]="sectionId('contact')"
+              i18n="@@heroCtaPrimary"
+            >
+              Request a stay
+            </a>
+            <a class="btn" [attr.href]="mailtoHref(contact.email || 'contact@isoatthetop.com')" i18n="@@heroCtaEmail">
+              Email
+            </a>
+            @if (phoneRevealed) {
+              <a class="btn" [attr.href]="telHref(phoneValue())">
+                <span>{{ phoneValue() }}</span>
+              </a>
+            } @else {
+              <button class="btn" type="button" (click)="revealPhone()">
+                <span i18n="@@showPhoneButton">Phone</span>
+              </button>
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 50px;">
+      <h2 class="section-title" i18n="@@stationTitle">The resort</h2>
+    </div>
+
+    <section [id]="sectionId('access')">
+      <div class="container">
+        @if (season === 'winter') {
+          <h2 class="section-title" i18n="@@accessTitleWinter">Isola 2000 · Sun & altitude</h2>
+        } @else {
+          <h2 class="section-title" i18n="@@accessTitleSummer">Isola 2000 · Fresh air & views</h2>
+        }
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 i18n="@@accessKnowTitle">Good to know</h3>
+            <ul class="list">
+              <li i18n="@@accessKnow1">France's 5th highest resort</li>
+              <li i18n="@@accessKnow2">300 sunny days per year</li>
+              <li i18n="@@accessKnow4">120 km of slopes</li>
+              <li i18n="@@accessKnow3">Good-value lift passes: €44 adult day pass</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 i18n="@@accessTimesTitle">Indicative travel times</h3>
+            <ul class="list">
+              <li i18n="@@accessTimes1">From Nice: 1h30</li>
+              <li i18n="@@accessTimes2">From Marseille: 3h30</li>
+              <li i18n="@@accessTimes3">From Montpellier: 5h00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 14px">
+          <h3 i18n="@@accessMapTitle">Map</h3>
+          <img
+            src="media/acces-carte.png"
+            alt="Map of South-East France locating Isola 2000"
+            i18n-alt="@@accessMapAlt"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <p class="fineprint" style="margin-top: 10px">
+          <span i18n="@@accessLinksLabel">Useful links:</span>
+          <a href="https://isola2000.com/" rel="noopener" target="_blank" i18n="@@accessLinkOffice">Tourist office</a>
+          ·
+          <a href="https://www.meteofrance.com/meteo-montagne/alpes-du-sud/isola-2000" rel="noopener" target="_blank">
+            <span i18n="@@accessLinkWeather">Weather</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section [id]="sectionId('activities')">
+      <div class="container">
+        @if (season === 'winter') {
+        } @else {
+        }
+        <h2 class="section-title" i18n="@@activitiesTitle">Activities</h2>
+        <div class="grid grid-3">
+          @if (season === 'winter') {
+            <div class="card">
+              <h3 i18n="@@activities1TitleWinter">Ski & snowboard</h3>
+              <p i18n="@@activities1TextWinter">Resort area, lessons, rentals.</p>
+            </div>
+            <div class="card">
+              <h3 i18n="@@activities2TitleWinter">Walks & viewpoints</h3>
+              <p i18n="@@activities2TextWinter">Scenic routes and sunsets.</p>
+            </div>
+            <div class="card">
+              <h3 i18n="@@activities3TitleWinter">Family-friendly</h3>
+              <p i18n="@@activities3TextWinter">Simple, practical activities.</p>
+            </div>
+          } @else {
+            <div class="card">
+              <h3 i18n="@@activities1TitleSummer">Hiking</h3>
+              <p i18n="@@activities1TextSummer">Scenic trails and cool air.</p>
+            </div>
+            <div class="card">
+              <h3 i18n="@@activities2TitleSummer">Mountain biking</h3>
+              <p i18n="@@activities2TextSummer">Routes and adrenaline in the Alps.</p>
+            </div>
+            <div class="card">
+              <h3 i18n="@@activities3TitleSummer">Family-friendly</h3>
+              <p i18n="@@activities3TextSummer">Nature activities and gentle walks.</p>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+
+    @if (season === 'winter') {
+      <section [id]="sectionId('slopes-map')">
+        <div class="container">
+          <h2 class="section-title" i18n="@@slopeMapTitle">Slopes map</h2>
+          <div class="card">
+            <img
+              src="media/hiver/plan-pistes.jpg"
+              alt="Isola 2000 ski slopes map"
+              i18n-alt="@@slopeMapAlt"
+              loading="lazy"
+              decoding="async"
+              style="width: 100%; height: auto; cursor: pointer;"
+              (click)="openSlopeMapLightbox()"
+            />
+          </div>
+          <p class="fineprint" style="margin-top: 10px">
+            <span i18n="@@slopeMapSource">Source:</span>
+            <a href="https://www.isola2000.com/plan-des-pistes/" rel="noopener" target="_blank" i18n="@@slopeMapLink">
+              Isola 2000 official website
+            </a>
+          </p>
+        </div>
+      </section>
+    }
+  </section>
+
+  <section [id]="sectionId('apartment')">
+    <div class="container">
+      <h2 class="section-title" i18n="@@apartmentTitle">The apartment</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 i18n="@@apartmentLayoutTitle">Layout</h3>
+          <ul class="list">
+            <li i18n="@@apartmentLayout1">
+              2 separate bedrooms: double bed 140×190; bunk bed 190×80 + pull-out.
+            </li>
+            <li i18n="@@apartmentLayout2">1 bathroom with WC + 1 shower room with WC.</li>
+            <li i18n="@@apartmentLayout3">Bright living room with panoramic mountain views.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 i18n="@@apartmentAmenitiesTitle">Amenities</h3>
+          <ul class="list">
+            <li i18n="@@apartmentAmenity1">Dishwasher, oven, induction hob</li>
+            <li i18n="@@apartmentAmenity2">Washing machine, tumble dryer</li>
+            <li i18n="@@apartmentAmenity3">TV, Nespresso</li>
+            <li i18n="@@apartmentAmenity4">Bed linen & towels provided</li>
+            <li i18n="@@apartmentAmenity5">Large wardrobes, ski locker</li>
+            <li i18n="@@apartmentAmenity6">Easy street parking</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 14px">
+        <h3 i18n="@@accessDistancesTitle">Key distances</h3>
+        <ul class="list">
+          @if (season === 'winter') {
+            <li i18n="@@accessDistancesWinter1">Slopes: ~250 m</li>
+            <li i18n="@@accessDistancesWinter2">Shops: 7–8 min walk</li>
+            <li i18n="@@accessDistancesWinter3">Internal shuttle with stop in front of the building, daily 7:45 am – 6:30 pm. <a href="https://isola2000.com/annuaire/mobilite/se-deplacer-fr/navette-interne/" rel="noopener" target="_blank">More info</a></li>
+          } @else {
+            <li i18n="@@accessDistancesSummer1">Shops: 7–8 min walk</li>
+            <li i18n="@@accessDistancesSummer2">Internal shuttle with stop in front of the building, daily 7:45 am – 6:30 pm. <a href="https://isola2000.com/annuaire/mobilite/se-deplacer-fr/navette-interne/" rel="noopener" target="_blank">More info</a></li>
+            <li i18n="@@accessDistancesSummer3">Hiking/MTB starts nearby</li>
+          }
+        </ul>
+      </div>
+      <!--
+      <div style="margin-top: 14px" class="card">
+        <h3 i18n="@@apartmentPlanTitle">2D floor plan</h3>
+        <img
+          src="media/plan-2d.svg"
+          alt="2D apartment floor plan"
+          i18n-alt="@@apartmentPlanAlt"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      -->
+    </div>
+
+    <section [id]="sectionId('gallery')">
+      <div class="container" data-gallery [attr.data-default-season]="season">
+        <h2 class="section-title" i18n="@@galleryTitle">Gallery</h2>
+        <div class="gallery" data-gallery-grid aria-live="polite">
+          @for (item of galleryItems(); track item.src) {
+            <figure class="gallery-item">
+              <button
+                type="button"
+                (click)="openLightbox(item)"
+              >
+                <img [src]="item.src" [alt]="mediaAlt(item)" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>{{ mediaCaption(item) }}</figcaption>
+            </figure>
+          }
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox-backdrop" [attr.hidden]="lightboxOpen ? null : true" (click)="closeLightbox()">
+      <div
+        class="lightbox-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged photo"
+        i18n-aria-label="@@lightboxAriaLabel"
+        (click)="$event.stopPropagation()"
+      >
+        <button type="button" class="lightbox-close" aria-label="Close" i18n-aria-label="@@lightboxClose" (click)="closeLightbox()">
+          ×
+        </button>
+        @if (lightboxZoomable) {
+          <div class="lightbox-zoom-controls">
+            <button type="button" class="zoom-btn" (click)="zoomIn()" aria-label="Zoom in" i18n-aria-label="@@zoomInLabel">
+              +
+            </button>
+            <button type="button" class="zoom-btn" (click)="zoomOut()" aria-label="Zoom out" i18n-aria-label="@@zoomOutLabel">
+              −
+            </button>
+            <button type="button" class="zoom-btn" (click)="resetZoom()" aria-label="Reset zoom" i18n-aria-label="@@zoomResetLabel">
+              ⟲
+            </button>
+          </div>
+        }
+        <figure class="lightbox-figure" [class.zoomable]="lightboxZoomable">
+          <div class="lightbox-img-container"
+               #imgContainer
+               (mousedown)="onMouseDown($event, imgContainer)"
+               (mousemove)="onMouseMove($event, imgContainer)"
+               (mouseup)="onMouseUp()"
+               (mouseleave)="onMouseLeave()">
+            <img
+              class="lightbox-img"
+              [src]="lightboxSrc"
+              [alt]="lightboxAlt"
+              [style.transform]="lightboxZoomable ? 'scale(' + lightboxZoom + ')' : 'none'"
+              [style.pointerEvents]="'none'"
+            />
+          </div>
+          <figcaption class="lightbox-caption">{{ lightboxCaption }}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section [id]="sectionId('booking')">
+    <div class="container">
+      <h2 class="section-title" i18n="@@bookingTitle">Book your stay</h2>
+    </div>
+
+    <section [id]="sectionId('pricing')">
+      <div class="container">
+        <h2 class="section-title" i18n="@@pricingTitle">All weeks (Saturday → Saturday)</h2>
+        <div class="table-wrap">
+          <table data-pricing-table [attr.data-season]="season">
+            <thead>
+              <tr>
+                <th i18n="@@pricingWeek">Week</th>
+                <th i18n="@@pricingPrice">Price</th>
+                <th i18n="@@pricingStatus">Status</th>
+                <th i18n="@@pricingHolidays">School holidays</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (w of weeksForSeason(); track w.start) {
+                <tr>
+                  <td>{{ weekLabel(w.start, w.end) }}</td>
+                  <td>{{ w.price | currency: 'EUR' : 'symbol' : '1.0-0' }}</td>
+                  <td>
+                    <span class="status" [attr.data-status]="w.status">
+                      <span class="dot" aria-hidden="true"></span>{{ statusLabel(w.status) }}
+                    </span>
+                  </td>
+                  <td>
+                    @if (holidaysZones(w.holidays) === null) {
+                      <span class="badge badge-muted" [attr.aria-label]="holidaysLabel(w.holidays)">—</span>
+                    } @else if (holidaysZones(w.holidays)?.length === 0) {
+                      <span class="badge badge-muted" [attr.aria-label]="holidaysLabel(w.holidays)">
+                        {{ holidaysLabel(w.holidays) }}
+                      </span>
+                    } @else {
+                      <span class="badges">
+                        @for (z of holidaysZones(w.holidays)!; track z) {
+                          <span class="badge" [attr.data-zone]="z" [attr.aria-label]="'Zone ' + z">
+                            Zone {{ z }}
+                          </span>
+                        }
+                      </span>
+                    }
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section [id]="sectionId('included')">
+      <div class="container">
+        <h2 class="section-title" i18n="@@includedTitle">Included & conditions</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 i18n="@@includedIncludedTitle">Included</h3>
+            <ul class="list">
+              <li i18n="@@included1">Bed linen & towels</li>
+              <li i18n="@@included2">Kitchen equipment (Nespresso, induction, oven)</li>
+              <li i18n="@@includedToConfirm1">End-of-stay cleaning included</li>
+              @if (season === 'winter') {
+                <li i18n="@@included3Winter">Ski locker</li>
+              } @else {
+                <li i18n="@@included3Summer">Easy street parking</li>
+              }
+            </ul>
+          </div>
+          <div class="card">
+            <h3 i18n="@@includedToConfirmTitle">Stay conditions</h3>
+            <ul class="list">
+              <li i18n="@@includedToConfirm2">Deposit: €1,000</li>
+              <li i18n="@@includedToConfirm3">Check-in from 4:00 pm · check-out 10:00 am</li>
+              <li i18n="@@includedToConfirm5">Free cancellation up to 30 days before check-in</li>
+              <li i18n="@@includedToConfirm4">No pets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section [id]="sectionId('reviews')">
+      <div class="container" data-reviews>
+        <h2 class="section-title" i18n="@@reviewsTitle">Reviews</h2>
+        <p class="muted" style="font-size: 18px; font-weight: 600; margin-bottom: 12px;" i18n="@@reviewsRating">Rated ★ 5.0 on Airbnb</p>
+        <div class="brand-links">
+          <a
+            class="brand-link"
+            href="https://www.airbnb.com/rooms/1251381162146073277"
+            rel="noopener"
+            target="_blank"
+            aria-label="View this listing on Airbnb"
+            i18n-aria-label="@@airbnbLinkAria"
+          >
+            <img
+              class="brand-link-logo"
+              src="media/Airbnb_Logo_Bélo.svg"
+              alt="Airbnb"
+              i18n-alt="@@airbnbLogoAlt"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <a
+            class="brand-link-text"
+            href="https://www.airbnb.com/rooms/1251381162146073277"
+            rel="noopener"
+            target="_blank"
+          >
+            <span i18n="@@airbnbLinkText">View this listing on Airbnb</span>
+            <span style="font-size: 0.85em; opacity: 0.7; margin-left: 4px;">↗</span>
+          </a>
+        </div>
+        <div class="grid grid-3" data-review-list style="margin-top: 12px">
+          @for (r of (reviews.reviews || []); track r.date) {
+            <div class="card">
+              <h3>★ 5.0</h3>
+              <p>{{ reviewExcerpt(r) }}</p>
+              <p class="muted" style="margin-top: 10px">
+                {{ reviewTripType(r) }}{{ reviewTripType(r) ? ' · ' : '' }}{{ r.date || '' }} ·
+                <span i18n="@@reviewsSource">Source:</span> {{ r.source || 'Airbnb' }}
+              </p>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+
+    <section [id]="sectionId('contact')">
+      <div class="container">
+        <h2 class="section-title" i18n="@@contactTitle">Request a stay</h2>
+        <div class="grid grid-2 contact-grid">
+          <div class="card">
+            <h3 i18n="@@contactDetailsTitle">Contact details</h3>
+            <p>
+              <strong i18n="@@contactLabelEmail">Email : </strong>
+              <span style="display: inline-block; min-width: 280px;"> @if (emailRevealed) {
+                  <a [attr.href]="mailtoHref(contact.email || 'contact@isoatthetop.com')">
+                    {{ contact.email || 'contact@isoatthetop.com' }}
+                  </a>
+                  <button
+                    type="button"
+                    (click)="copyToClipboard(contact.email || 'contact@isoatthetop.com')"
+                    style="border: none; background: none; cursor: pointer; padding: 0 4px; vertical-align: middle;"
+                    title="Copier"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                } @else {
+                  <span style="font-style: italic; cursor: pointer; text-decoration: underline;" (click)="revealEmail()" i18n="@@showEmailButton">Show</span>
+                }
+              </span>
+            </p>
+            <p>
+              <strong i18n="@@contactLabelPhone">Téléphone : </strong>
+              <span style="display: inline-block; min-width: 280px;"> @if (phoneRevealed) {
+                  <a [attr.href]="telHref(phoneValue())">
+                    {{ phoneValue() }}
+                  </a>
+                  <button
+                    type="button"
+                    (click)="copyToClipboard(phoneValue())"
+                    style="border: none; background: none; cursor: pointer; padding: 0 4px; vertical-align: middle;"
+                    title="Copier"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                } @else {
+                  <span style="font-style: italic; cursor: pointer; text-decoration: underline;" (click)="revealPhone()" i18n="@@showPhoneButton">Show</span>
+                }
+              </span>
+            </p>
+            <hr class="divider" />
+            <p class="muted">
+              <strong i18n="@@contactQuickTitle">To get a quick reply</strong>
+            </p>
+            <ul class="list list-compact">
+              <li>
+                <span i18n="@@contactQuick1Prefix">Check</span>
+                <a [routerLink]="seasonPath(season)" [fragment]="sectionId('pricing')" i18n="@@navPricingInline">
+                  Pricing & availability
+                </a>
+                <span i18n="@@contactQuick1Suffix">, then share your dates (Saturday → Saturday).</span>
+              </li>
+              <li i18n="@@contactQuick2">Tell us your party size (up to 5) and any needs (kids, bedding, etc.).</li>
+              <li i18n="@@contactQuick3">Add your preferred contact method and, if useful, a callback window.</li>
+            </ul>
+            <hr class="divider" />
+            <p class="muted">
+              <strong i18n="@@contactConfirmTitle">What we’ll confirm</strong>
+            </p>
+            <ul class="list list-compact">
+              <li i18n="@@contactConfirm1">Week availability</li>
+              <li i18n="@@contactConfirm2">Price and details (arrival/departure, cleaning, deposit)</li>
+              <li i18n="@@contactConfirm3">Answers to your questions</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 i18n="@@contactFormTitle">Form</h3>
+            @if (formSuccess) {
+              <div class="alert alert-success" role="alert" style="margin-bottom: 16px; padding: 12px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; color: #155724;">
+                <strong i18n="@@formSuccessTitle">Message sent!</strong>
+                <p style="margin: 4px 0 0 0;" i18n="@@formSuccessMessage">We'll get back to you as soon as possible.</p>
+              </div>
+            }
+            @if (formError) {
+              <div class="alert alert-error" role="alert" style="margin-bottom: 16px; padding: 12px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24;">
+                <strong i18n="@@formErrorTitle">Error</strong>
+                <p style="margin: 4px 0 0 0;" i18n="@@formErrorMessage">An error occurred. Please try again or contact us directly.</p>
+              </div>
+            }
+            <form
+              data-contact-form
+              (submit)="onContactSubmit($event)"
+            >
+              <label>
+                <span i18n="@@contactFormName">Name</span>
+                <input name="name" autocomplete="name" required [disabled]="formSubmitting" />
+              </label>
+              <label>
+                <span i18n="@@contactFormEmail">Email</span>
+                <input name="email" type="email" autocomplete="email" required [disabled]="formSubmitting" />
+              </label>
+              <label>
+                <span i18n="@@contactFormPhone">Phone</span>
+                <input name="phone" type="tel" autocomplete="tel" [disabled]="formSubmitting" />
+              </label>
+              <label>
+                <span i18n="@@contactFormGuests">Guests</span>
+                <input name="people" type="number" min="1" max="5" inputmode="numeric" required [disabled]="formSubmitting" />
+              </label>
+              <label class="span-2">
+                <span i18n="@@contactFormWeek">Week (Saturday → Saturday)</span>
+                <select name="week" required [disabled]="formSubmitting">
+                  <option value="" i18n="@@contactFormChooseWeek">Choose a week…</option>
+                  @for (w of weeks; track w.start) {
+                    @if (w.season === season) {
+                      <option
+                        [value]="weekLabel(w.start, w.end)"
+                        [disabled]="w.status === 'booked'"
+                      >
+                        {{ weekLabel(w.start, w.end) }}
+                        @if (w.status === 'booked') {
+                          <span i18n="@@contactFormWeekBooked"> (Booked)</span>
+                        } @else if (w.status === 'option') {
+                          <span i18n="@@contactFormWeekOption"> (Option)</span>
+                        }
+                      </option>
+                    }
+                  }
+                </select>
+              </label>
+              <label class="span-2">
+                <span i18n="@@contactFormPrefContact">Preferred contact</span>
+                <select name="contact_preference" required [disabled]="formSubmitting">
+                  <option value="" i18n="@@contactFormChoose">Choose…</option>
+                  <option value="email" i18n="@@contactFormOptEmail">Email</option>
+                  <option value="phone" i18n="@@contactFormOptPhone">Phone</option>
+                </select>
+              </label>
+              <label class="span-2">
+                <span i18n="@@contactFormCallback">Callback window (optional)</span>
+                <input
+                  name="callback_window"
+                  placeholder="e.g. 12–2pm or 6–8pm"
+                  i18n-placeholder="@@contactFormCallbackPlaceholder"
+                  [disabled]="formSubmitting"
+                />
+              </label>
+              <label class="span-2">
+                <span i18n="@@contactFormMessage">Message</span>
+                <textarea
+                  name="message"
+                  placeholder="Dates, group, questions…"
+                  i18n-placeholder="@@contactFormMessagePlaceholder"
+                  [disabled]="formSubmitting"
+                ></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit" [disabled]="formSubmitting || formSuccess">
+                  @if (formSuccess) {
+                    <span i18n="@@contactFormSent">Sent!</span>
+                  } @else if (formSubmitting) {
+                    <span i18n="@@contactFormSending">Sending…</span>
+                  } @else {
+                    <span i18n="@@contactFormSend">Send</span>
+                  }
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="brand-title" i18n="@@brandTitleFooter">Iso At The Top</div>
+    <div class="fineprint" i18n="@@footerTagline">
+      Apartment rental in Isola 2000 · south-facing · panoramic views.
+    </div>
+    <div class="fineprint" style="margin-top: 20px; opacity: 0.7; line-height: 1.6;">
+      <p style="margin: 0 0 8px 0;">
+        <span i18n="@@footerPublisher">Publisher:</span> Duluth Technologies ·
+        <span i18n="@@footerAddress">5 avenue du Mont Rabeau, 06200 Nice</span> ·
+        SIRET: 814 012 761 00015
+      </p>
+      <p style="margin: 0 0 8px 0;">
+        <span i18n="@@footerContact">Contact:</span> contact@isoatthetop.com ·
+        <span i18n="@@footerHosting">Hosting: GitHub Pages</span>
+      </p>
+      <p style="margin: 0;" i18n="@@footerCookiesNotice">
+        This site does not use cookies. Data is used only to reply to your request.
+      </p>
+    </div>
+  </div>
+</footer>

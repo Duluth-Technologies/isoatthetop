@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Iso At The Top</title>
+    <script>
+      (function () {
+        // GitHub Pages deep-link fallback:
+        // 404.html redirects to /<project>/<locale>/?ghp=<original-path>.
+        // Restore the original URL before calculating <base href>.
+        try {
+          var params = new URLSearchParams(location.search);
+          var ghp = params.get("ghp");
+          if (ghp) {
+            var restored = decodeURIComponent(ghp);
+            history.replaceState(null, "", restored);
+          }
+        } catch (e) {
+          // ignore
+        }
+
+        var parts = location.pathname.split("/").filter(Boolean);
+        var isLocale = function (s) { return s === "fr" || s === "en"; };
+        // GitHub Pages shape: /<project>/<locale>/...
+        var project = parts.length >= 2 && isLocale(parts[1]) ? parts[0] : "";
+        // Localized bundles shape: /<locale>/...
+        var locale = project ? parts[1] : (isLocale(parts[0]) ? parts[0] : "");
+        var base = "/";
+        if (project) base += project + "/";
+        if (locale) base += locale + "/";
+        document.write('<base href="' + base + '">');
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- GoatCounter Analytics (sans cookies) -->
+    <!-- Pour activer : créez un compte gratuit sur https://www.goatcounter.com -->
+    <!-- Puis remplacez 'VOTRE_CODE' par votre code unique (ex: 'monsite' si votre URL est monsite.goatcounter.com) -->
+    <script data-goatcounter="https://isoatthetop.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

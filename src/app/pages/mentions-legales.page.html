@@ -1,0 +1,78 @@
+    <a class="skip-link" href="#main" i18n="@@navSkipToContent">Skip to content</a>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" routerLink="/mentions-legales">
+          <span class="brand-title" i18n="@@brandTitle">Iso At The Top</span>
+          <span class="brand-sub" i18n="@@legalTitle">Legal notice</span>
+        </a>
+        <div class="controls">
+          <a class="btn" [routerLink]="seasonPath('winter')" i18n="@@seasonWinter">Winter</a>
+          <a class="btn" [routerLink]="seasonPath('summer')" i18n="@@seasonSummer">Summer</a>
+          <a class="btn" [attr.href]="otherLocaleHref('fr')" [attr.aria-current]="locale === 'fr' ? 'page' : null">
+            FR
+          </a>
+          <a class="btn" [attr.href]="otherLocaleHref('en')" [attr.aria-current]="locale === 'en' ? 'page' : null">
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container" style="padding: 34px 20px 40px;">
+      <h1 style="margin:0 0 14px;" i18n="@@legalTitleH1">Legal notice</h1>
+      <div class="card">
+        <h2 class="section-title" style="margin:0 0 10px;" i18n="@@legalPublisherTitle">Publisher</h2>
+        <p class="muted" style="margin:0 0 10px;" i18n="@@legalPublisherHint">
+          To be completed with the owner’s information.
+        </p>
+        <ul class="list">
+          <li i18n="@@legalPublisherName">Name / company: …</li>
+          <li>
+            <span i18n="@@legalPublisherEmail">Email:</span>
+            <a [attr.href]="'mailto:' + (contact.email || 'contact@isoatthetop.com')">
+              <span>{{ contact.email || 'contact@isoatthetop.com' }}</span>
+            </a>
+          </li>
+          <li>
+            <span i18n="@@legalPublisherPhone">Phone:</span>
+            @if (phoneRevealed) {
+              <a [attr.href]="phoneHref()">
+                <span>{{ phoneValue() }}</span>
+              </a>
+            } @else {
+              <button class="btn" type="button" (click)="revealPhone()">
+                <span i18n="@@showPhoneButton">Phone</span>
+              </button>
+            }
+          </li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h2 class="section-title" style="margin:0 0 10px;" i18n="@@legalHostingTitle">Hosting</h2>
+        <ul class="list">
+          <li i18n="@@legalHostingValue">
+            GitHub Pages — GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
+          </li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h2 class="section-title" style="margin:0 0 10px;" i18n="@@legalDataTitle">Data & cookies</h2>
+        <p style="margin:0 0 10px;">
+          <strong i18n="@@legalNoCookies">This site does not use cookies.</strong>
+        </p>
+        <p class="muted" style="margin:0;" i18n="@@legalDataUse">
+          If you use the contact form, the information entered is used only to reply to your stay request.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="fineprint">© {{ year }} <span i18n="@@brandTitleFooter">Iso At The Top</span></div>
+        <div class="fineprint" style="text-align:right;">
+          <a [routerLink]="seasonPath('winter')" i18n="@@legalBack">Back</a>
+        </div>
+      </div>
+    </footer>
