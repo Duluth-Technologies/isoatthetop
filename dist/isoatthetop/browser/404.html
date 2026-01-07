@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        var isLocale = function (s) { return s === 'fr' || s === 'en'; };
+        var parts = location.pathname.split('/').filter(Boolean);
+
+        // Try to infer project + locale from the 404 path.
+        var project = parts.length >= 2 && isLocale(parts[1]) ? parts[0] : '';
+        var locale = project ? parts[1] : (isLocale(parts[0]) ? parts[0] : '');
+
+        if (!locale) {
+          try {
+            var nav = (navigator.language || '').toLowerCase();
+            locale = nav.startsWith('fr') ? 'fr' : 'en';
+          } catch (e) {
+            locale = 'en';
+          }
+        }
+
+        var base = '/' + (project ? project + '/' : '') + locale + '/';
+        var original = location.pathname + location.search + location.hash;
+        location.replace(base + '?ghp=' + encodeURIComponent(original));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

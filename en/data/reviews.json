@@ -1,0 +1,32 @@
+{
+  "ratingText": { "fr": "5 étoiles sur Airbnb", "en": "5-star rating on Airbnb" },
+  "reviews": [
+    {
+      "excerpt": {
+        "fr": "un grand merci à Vincent pour sa gentillesse et sa disponibilité. c'est un hôte très arrangeant et humain . l'appartement est spacieux pour une famille de quatre ...",
+        "en": "many thanks to Vincent for his kindness and availability. he is a very accommodating and humane host. the apartment is spacious for a family of four ..."
+      },
+      "date": "08/2025",
+      "tripType": { "fr": "Séjour d’une semaine", "en": "Stayed about a week" },
+      "source": "Airbnb"
+    },
+    {
+      "excerpt": {
+        "fr": "Excellent séjour, logement spacieux, confortable et bien situé. Grande cuisine bien équipée, nombreux rangements, 2 salles de bain et 2 wc, c’est très pratique! et même quelques jeux d...",
+        "en": "Excellent stay, spacious, comfortable, and well located. Large well-equipped kitchen, lots of storage, 2 bathrooms and 2 toilets, very practical! and even a few games..."
+      },
+      "date": "02/2025",
+      "tripType": { "fr": "Séjour de quelques nuits", "en": "Stayed a few nights" },
+      "source": "Airbnb"
+    },
+    {
+      "excerpt": {
+        "fr": "Appartement pratique, bien situé et bien équipé. Vincent a été très accueillant. Je recommande cet appartement pour skier à Isola.",
+        "en": "Practical, conveniently located, and well equipped apartment. Vincent was very welcoming. Recommend this apartment for skiing in Isola"
+      },
+      "date": "02/2025",
+      "tripType": { "fr": "Séjour d’une semaine", "en": "Stayed about a week" },
+      "source": "Airbnb"
+    }
+  ]
+}

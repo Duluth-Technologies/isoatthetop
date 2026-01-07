@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Iso At The Top</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0;url=en/">
+    <script>
+      (function () {
+        var info = 
+  (function () {
+    var isLocale = function (s) { return s === 'fr' || s === 'en'; };
+    var parts = location.pathname.split('/').filter(Boolean);
+    var project = parts.length >= 2 && isLocale(parts[1]) ? parts[0] : '';
+    var locale = project ? parts[1] : (isLocale(parts[0]) ? parts[0] : '');
+    var base = '/' + (project ? project + '/' : '') + (locale ? locale + '/' : '');
+    return { project: project, locale: locale, base: base, parts: parts };
+  })()
+;
+        var locale = info.locale;
+        if (!locale) {
+          try {
+            var nav = (navigator.language || '').toLowerCase();
+            locale = nav.startsWith('fr') ? 'fr' : 'en';
+          } catch (e) {
+            locale = 'en';
+          }
+        }
+        var target = '/' + (info.project ? info.project + '/' : '') + locale + '/';
+        location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

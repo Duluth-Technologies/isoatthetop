@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-beasties-container>
+  <head>
+    <meta charset="utf-8">
+    <title>Iso At The Top</title>
+    <script>
+      (function () {
+        // GitHub Pages deep-link fallback:
+        // 404.html redirects to /<project>/<locale>/?ghp=<original-path>.
+        // Restore the original URL before calculating <base href>.
+        try {
+          var params = new URLSearchParams(location.search);
+          var ghp = params.get("ghp");
+          if (ghp) {
+            var restored = decodeURIComponent(ghp);
+            history.replaceState(null, "", restored);
+          }
+        } catch (e) {
+          // ignore
+        }
+
+        var parts = location.pathname.split("/").filter(Boolean);
+        var isLocale = function (s) { return s === "fr" || s === "en"; };
+        // GitHub Pages shape: /<project>/<locale>/...
+        var project = parts.length >= 2 && isLocale(parts[1]) ? parts[0] : "";
+        // Localized bundles shape: /<locale>/...
+        var locale = project ? parts[1] : (isLocale(parts[0]) ? parts[0] : "");
+        var base = "/";
+        if (project) base += project + "/";
+        if (locale) base += locale + "/";
+        document.write('<base href="' + base + '">');
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- GoatCounter Analytics (sans cookies) -->
+    <!-- Pour activer : créez un compte gratuit sur https://www.goatcounter.com -->
+    <!-- Puis remplacez 'VOTRE_CODE' par votre code unique (ex: 'monsite' si votre URL est monsite.goatcounter.com) -->
+    <script data-goatcounter="https://isoatthetop.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>:root{--bg:#fbfbfc;--surface:#ffffff;--text:#0b1220;--muted:#4b5563;--border:rgba(15, 23, 42, .12);--accent:#0077ff;--accent-2:#00a7c4;--shadow:0 18px 50px rgba(2, 6, 23, .12);--radius:16px;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:radial-gradient(1200px 600px at 10% -10%,rgba(0,119,255,.16),transparent 55%),radial-gradient(800px 600px at 90% 0%,rgba(0,167,196,.14),transparent 52%),var(--bg);line-height:1.5}</style><link rel="stylesheet" href="styles-WVHGSJZ3.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WVHGSJZ3.css"></noscript></head>
+  <body>
+    <app-root></app-root>
+  <script src="polyfills-PA7KGA62.js" type="module"></script><script src="main-ESQKK4CX.js" type="module"></script></body>
+</html>
