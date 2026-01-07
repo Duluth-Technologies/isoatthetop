@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- French Winter Page -->
+  <url>
+    <loc>https://www.isoatthetop.com/fr/hiver/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.isoatthetop.com/fr/hiver/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.isoatthetop.com/en/winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.isoatthetop.com/en/winter/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- English Winter Page -->
+  <url>
+    <loc>https://www.isoatthetop.com/en/winter/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.isoatthetop.com/fr/hiver/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.isoatthetop.com/en/winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.isoatthetop.com/en/winter/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- French Summer Page -->
+  <url>
+    <loc>https://www.isoatthetop.com/fr/ete/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.isoatthetop.com/fr/ete/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.isoatthetop.com/en/summer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.isoatthetop.com/en/summer/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- English Summer Page -->
+  <url>
+    <loc>https://www.isoatthetop.com/en/summer/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.isoatthetop.com/fr/ete/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.isoatthetop.com/en/summer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.isoatthetop.com/en/summer/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- French Legal Mentions -->
+  <url>
+    <loc>https://www.isoatthetop.com/fr/mentions-legales/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- English Legal Mentions -->
+  <url>
+    <loc>https://www.isoatthetop.com/en/mentions-legales/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
