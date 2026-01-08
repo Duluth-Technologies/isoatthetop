@@ -50,20 +50,8 @@
 
   {
     "season": "summer",
-    "src": "media/ete/hero.svg",
-    "alt": { "fr": "Vue panoramique sur les montagnes en été sous un ciel azur", "en": "Panoramic view of summer mountains under an azure sky" },
-    "caption": { "fr": "Été : grand bleu et montagnes.", "en": "Summer: blue skies and mountains." }
-  },
-  {
-    "season": "summer",
     "src": "media/ete/vue_été.JPG",
     "alt": { "fr": "Vue panoramique en été", "en": "Panoramic summer view" },
-    "caption": { "fr": "Vue (été).", "en": "View (summer)." }
-  },
-  {
-    "season": "summer",
-    "src": "media/ete/vue_été2.JPG",
-    "alt": { "fr": "Vue sur les montagnes en été", "en": "Mountain view in summer" },
     "caption": { "fr": "Vue (été).", "en": "View (summer)." }
   },
   {
