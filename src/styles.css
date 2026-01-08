@@ -606,8 +606,182 @@ footer{
   .grid-2{ grid-template-columns: 1fr; }
   .gallery-item{ grid-column: span 6; }
 }
+
+@media (max-width: 768px){
+  /* Réduire la taille du logo sur mobile */
+  .brand-logo{
+    height: 52px;
+  }
+  
+  /* Cacher la navigation principale sur mobile */
+  .nav{
+    display: none;
+  }
+  
+  /* Ajuster l'espacement du header */
+  .topbar-inner{
+    padding: 8px 16px;
+    gap: 12px;
+  }
+  
+  /* Réduire la taille des pills */
+  .pill{
+    padding: 4px;
+    gap: 6px;
+  }
+  
+  .pill a{
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  
+  /* Ajuster les contrôles */
+  .controls{
+    gap: 8px;
+  }
+  
+  /* Réduire la taille des boutons dans le hero sur mobile */
+  .hero-cta .btn{
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+  
+  /* Optimiser l'affichage du plan des pistes sur mobile */
+  #plan-des-pistes .card,
+  #slopes-map .card{
+    padding: 8px;
+  }
+  
+  #plan-des-pistes .card img,
+  #slopes-map .card img{
+    border-radius: 8px;
+  }
+  
+  /* Optimiser l'affichage du tableau des tarifs sur mobile */
+  table{ min-width: 480px; }
+  
+  th, td{
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  
+  th{
+    font-size: 11px;
+  }
+  
+  /* Cacher la colonne "Vacances scolaires" sur tablette */
+  table[data-pricing-table] th:nth-child(4),
+  table[data-pricing-table] td:nth-child(4){
+    display: none;
+  }
+  
+  /* Ajuster les badges de statut */
+  .status{
+    padding: 4px 8px;
+    font-size: 12px;
+    gap: 6px;
+  }
+  
+  .dot{
+    width: 8px;
+    height: 8px;
+  }
+}
+
 @media (max-width: 560px){
   form{ grid-template-columns: 1fr; }
   textarea, .span-2, .form-actions{ grid-column: span 1; }
   .gallery-item{ grid-column: span 12; }
+  
+  /* Logo encore plus petit sur très petit écran */
+  .brand-logo{
+    height: 48px;
+  }
+  
+  .topbar-inner{
+    padding: 6px 12px;
+  }
+  
+  /* Optimiser la lightbox pour mobile - image plus grande */
+  .lightbox-backdrop{
+    padding: 12px;
+  }
+  
+  .lightbox-dialog{
+    max-height: 92vh;
+    border-radius: 14px;
+  }
+  
+  .lightbox-img-container{
+    max-height: 82vh;
+  }
+  
+  .lightbox-img{
+    max-height: 82vh;
+  }
+  
+  /* Réduire la taille des boutons de contrôle */
+  .lightbox-close{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    top: 8px;
+    right: 8px;
+  }
+  
+  .lightbox-zoom-controls{
+    top: 8px;
+    left: 8px;
+    padding: 4px;
+    gap: 4px;
+    border-radius: 10px;
+  }
+  
+  .zoom-btn{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .lightbox-caption{
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  /* Optimiser davantage le tableau des tarifs pour mobile */
+  table{ min-width: 340px; }
+  
+  th, td{
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  
+  th{
+    font-size: 10px;
+    letter-spacing: .04em;
+  }
+  
+  /* Réduire encore plus les badges de statut */
+  .status{
+    padding: 3px 6px;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .dot{
+    width: 7px;
+    height: 7px;
+  }
+  
+  /* Réduire le padding de la zone de scroll du tableau */
+  .table-wrap{
+    border-radius: 12px;
+  }
+  
+  /* Optimiser l'espacement des sections de réservation */
+  .container{
+    padding: 0 16px;
+  }
 }
