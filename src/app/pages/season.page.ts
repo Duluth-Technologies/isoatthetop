@@ -65,7 +65,7 @@ interface WeekRow {
   season: Season;
   start: string;
   end: string;
-  price: number;
+  price: number | null;
   status: WeekStatus;
   holidays: string[];
 }

@@ -384,7 +384,7 @@
               @for (w of weeksForSeason(); track w.start) {
                 <tr>
                   <td>{{ weekLabel(w.start, w.end) }}</td>
-                  <td>{{ w.price | currency: 'EUR' : 'symbol' : '1.0-0' }}</td>
+                  <td>{{ (w.price | currency: 'EUR' : 'symbol' : '1.0-0') ?? '—' }}</td>
                   <td>
                     <span class="status" [attr.data-status]="w.status">
                       <span class="dot" aria-hidden="true"></span>{{ statusLabel(w.status) }}
