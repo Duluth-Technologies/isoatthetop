@@ -370,6 +370,9 @@
     <section [id]="sectionId('pricing')">
       <div class="container">
         <h2 class="section-title" i18n="@@pricingTitle">All weeks (Saturday → Saturday)</h2>
+        @if (season === 'winter') {
+          <p class="muted" i18n="@@pricingWinterIncludesCleaning">Weekly prices include €150 end-of-stay cleaning.</p>
+        }
         <div class="table-wrap">
           <table data-pricing-table [attr.data-season]="season">
             <thead>

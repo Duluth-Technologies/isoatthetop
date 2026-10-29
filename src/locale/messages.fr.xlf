@@ -961,6 +961,12 @@
           <context context-type="linenumber">392,393</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pricingWinterIncludesCleaning" datatype="html">
+        <source>Weekly prices include €150 end-of-stay cleaning.</source><target>Les tarifs à la semaine incluent 150 € de ménage de fin de séjour.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/season.page.html</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="pricingWeek" datatype="html">
         <source>Week</source><target>Semaine</target>
         <context-group purpose="location">
