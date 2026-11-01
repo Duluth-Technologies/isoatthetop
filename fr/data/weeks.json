@@ -11,7 +11,7 @@
   { "season": "winter", "start": "2027-02-06", "end": "2027-02-13", "price": 1349, "status": "booked", "holidays": ["C"] },
   { "season": "winter", "start": "2027-02-13", "end": "2027-02-20", "price": 1559, "status": "available", "holidays": ["A", "C"] },
   { "season": "winter", "start": "2027-02-20", "end": "2027-02-27", "price": 1759, "status": "available", "holidays": ["A", "B"] },
-  { "season": "winter", "start": "2027-02-27", "end": "2027-03-06", "price": 1759, "status": "available", "holidays": ["B"] },
+  { "season": "winter", "start": "2027-02-27", "end": "2027-03-06", "price": 1759, "status": "booked", "holidays": ["B"] },
   { "season": "winter", "start": "2027-03-06", "end": "2027-03-13", "price": 909, "status": "available", "holidays": [] },
   { "season": "winter", "start": "2027-03-13", "end": "2027-03-20", "price": 909, "status": "available", "holidays": [] },
   { "season": "winter", "start": "2027-03-20", "end": "2027-03-27", "price": 909, "status": "available", "holidays": [] },
